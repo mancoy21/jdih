@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "artisan",
+      "use": "@vercel/php"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.php"
+    }
+  ],
+  "env": {
+    "APP_ENV": "production",
+    "APP_DEBUG": "false",
+    "APP_URL": "https://jdih-weld.vercel.app",
+    "APP_KEY": "base64:ueASaypkNVlGk8NFxo+m7tK35C6GnlZW6Kpjp0Yon2Q=",
+    "DB_CONNECTION": "mysql",
+    "DB_HOST": "your-db-host",
+    "DB_PORT": "3306",
+    "DB_DATABASE": "your-db-name",
+    "DB_USERNAME": "your-db-username",
+    "DB_PASSWORD": "your-db-password",
+    "CACHE_DRIVER": "array",
+    "SESSION_DRIVER": "cookie",
+    "QUEUE_CONNECTION": "sync",
+    "MAIL_MAILER": "smtp",
+    "MAIL_HOST": "smtp.mailtrap.io",
+    "MAIL_PORT": "2525",
+    "MAIL_USERNAME": "your-mail-username",
+    "MAIL_PASSWORD": "your-mail-password",
+    "MAIL_ENCRYPTION": "tls"
+  }
+}
